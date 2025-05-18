@@ -13,6 +13,7 @@ The top-right button selects between three pages for the 48 pads, again indicate
 A long press on the bottom right button activates an _action recorder_ that records the following performance actions on the pads. A short press stops the recording and then toggles between playing back the recorded actions (in a loop) or stopping.
 
 The instrument also includes an optional switch pedal that behaves similarly to a sostenuto pedal on a grand piano (the middle pedal) – i.e., it freezes the currently pressed pads in their current state until the pedal is released. This allows for more complex performances where, for example, several pads with effect modules could be held down with the pedal, freeing up the performer's hands to play on other pads.
+![‎parsimoniaMantaLayout](https://github.com/user-attachments/assets/7e727d89-93f3-4163-b6d5-a7120b7c5afd)
 
 ## Installation
 First, you need to install [SuperCollider](https://supercollider.github.io/) and [SC3-Plugins](https://supercollider.github.io/sc3-plugins/).
