@@ -4,6 +4,7 @@ This system was developed as a part of my [PhD thesis](https://ltu.diva-portal.o
 
 As it stands. the system is pretty useless without a _Manta_ controller, but if you're lucky enough to have one, you're welcome to try it out.
 
+## The Instrument
 In the _Parsimonia_ system, each hexagonal pad of the _Manta_ can be assigned one or more predefined modules of different types that generate or process sound or data. These module types include synths or samplers, SuperCollider patterns, hardware inputs, effects, MIDI note or MIDI control change, control voltage, and internal parameter control. A module can also be a whole composition, but those are not included in this release.
 
 The surface sensors in the pads always control the most significant module parameter, i.e., amplitude or modulation amount. While the pads functionality remains open in regard to user-assigned modules, the buttons and sliders have fixed functions. The two left-most buttons switch between three different slider modes, indicated by their three color states, off, amber, and red. As such, the sliders and the buttons next to it work in pairs. Depending on the corresponding button's state, the top slider controls functions common for the whole system, i.e., processing applied to the master output. This entails a master volume control, a DJ style combined high and lowpass filter, and saturation. The second slider sets parameters assigned to three different _morph groups_, to which parameters can be assigned with individual ranges.
