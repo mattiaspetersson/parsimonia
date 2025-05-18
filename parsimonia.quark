@@ -1,0 +1,10 @@
+(
+name: "parsimonia",
+path: "parsimonia",
+summary: "a modular DMI for the Snyderphonics Manta controller",
+author:	"Mattias Petersson",
+version: 0.9,
+helpdoc: "parsimonia-help/parsimonia.html",
+dependencies: ["wslib"],
+license: "GPL"
+)
