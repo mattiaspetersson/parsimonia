@@ -80,34 +80,34 @@ The system can be easily extended with new modules. They need to inherit from th
 ```
 // a synth module
 ParsimoniaModule_Sine : ParsimoniaModule {
-	initModule {
-		type = \synth;
-		name = \sine;
-	}
+   initModule {
+      type = \synth;
+         name = \sine;
+      }
 
-	*build {
-		ParsimoniaModule.synthFactory(\sine, {|buf, freq, amp, gate, loop,
-			fb|
-			SinOscFB.ar(freq!2, fb, 0.1);
-		});
-	}
+   *build {
+      ParsimoniaModule.synthFactory(\sine, {|buf, freq, amp, gate, loop,
+         fb|
+            SinOscFB.ar(freq!2, fb, 0.1);
+      });
+   }
 }
 
 // an effect module
 ParsimoniaModule_Saturation : ParsimoniaModule {
-	initModule {
-		type = \fx;
-		name = \saturation;
-	}
+   initModule {
+      type = \fx;
+         name = \saturation;
+      }
 
-	*build {
-		ParsimoniaModule.fxFactory(\saturation, {|input, freq, gate,
-			saturation = 9|
-			var sig, satVal;
-			satVal = saturation.lag(0.1).clip(1.0, 99.0);
-			sig = (input * satVal).tanh / (satVal ** 0.6); // formula by James Harkins (satVal can't be 0!)
-		});
-	}
+   *build {
+      ParsimoniaModule.fxFactory(\saturation, {|input, freq, gate,
+         saturation = 9|
+         var sig, satVal;
+         satVal = saturation.lag(0.1).clip(1.0, 99.0);
+         sig = (input * satVal).tanh / (satVal ** 0.6); // formula by James Harkins (satVal can't be 0!)
+      });
+   }
 }
 ```
 
